@@ -1,13 +1,13 @@
 apiVersion: rbac.authorization.k8s.io/v1
-kind: RoleBinding
+kind: RoleBinding             # Object type
 metadata:
-  name: pod-manager-binding
-  namespace: roboshop
+  name: pod-manager-binding   # Name of the rolebinding
+  namespace: roboshop         # Namespace from the role created
 subjects:
-- kind: User
-  name: srikanth
-  apiGroup: rbac.authorization.k8s.io
+- kind: User                  # kind of user like normal user or group (group of users)
+  name: srikanth              # the user who needs the access to the namespace
+  apiGroup: rbac.authorization.k8s.io     # name of the apigroup
 roleRef:
-  kind: Role
-  name: pod-manager
-  apiGroup: rbac.authorization.k8s.io
+  kind: Role                  # Referencing the role
+  name: pod-manager           # Name of the role to be used for binding
+  apiGroup: rbac.authorization.k8s.io     # name of the apigroup
