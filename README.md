@@ -14,7 +14,7 @@
 - In K8s we have 4 types of objects in RBAC, they are
     - Role - namdspace level
     - RoleBinding -
-    - ClusterRole - Cluster Level
+    - ClusterRole - Cluster Level or Non Namespaced
     - ClusterRoleBinding -
 
 * Role: A Role is a collection of permissions that allow users to perform specific actions (verbs, such as “get”, “create”, “and “delete”) on a defined set of Kubernetes resource types (such as Pods, Deployments, and Namespaces).
