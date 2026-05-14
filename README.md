@@ -6,7 +6,7 @@ RBAC - Role Based Access Control    -   This comes under K8s Adminstration
 
 - In K8s we have some verbs on resources to perform
     - verbs are known as actions like create, read, update, delete etc
-    - this can be performed on the resources we have in k8s
+    - these can be performed on the resources we have in k8s
     - which are pod, deployment, statefulset, services, secrets and configmaps etc
 
 - In K8s we have 4 types of objects in RBAC, they are
