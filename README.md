@@ -16,6 +16,6 @@ RBAC - Role Based Access Control    -   This comes under K8s Adminstration
     - ClusterRoleBinding -
 
 - We give role permissions to users or groups based on their "Role"
-    - Developer     -       CRUD Permissions
-    - Admin         -       Read, Update and Delete permissions
-    - User          -       Read/Describe, List etc
+    - Developer - CRUD Permissions
+    - Admin - Read, Update and Delete permissions
+    - User - Read/Describe, List etc
