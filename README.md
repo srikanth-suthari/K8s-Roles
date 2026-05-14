@@ -9,4 +9,4 @@ RBAC - Role Based Access Control
     - this can be performed on the resources we have in k8s
     - which are pod, deployment, statefulset, services, secrets and configmaps etc
 
--s
+- 
