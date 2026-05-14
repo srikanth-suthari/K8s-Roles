@@ -9,4 +9,8 @@ RBAC - Role Based Access Control    -   This comes under K8s Adminstration
     - this can be performed on the resources we have in k8s
     - which are pod, deployment, statefulset, services, secrets and configmaps etc
 
-- 
+- In K8s we have 4 types of objects in RBAC, they are
+    - Role - namdspace level
+    - RoleBinding -
+    - ClusterRole - Cluster Level
+    - ClusterRoleBinding -
