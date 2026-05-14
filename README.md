@@ -24,7 +24,7 @@ RBAC - Role Based Access Control    -   This comes under K8s Adminstration
 
 - User --> Role --> RoleBinding
 
-    - Here we are making use of AWS IAM for user management
+    - Here we are making use of AWS IAM for authentication and authorisation as user management
     - Create a user in AWS IAM and give him the required access like "Describing the EKS Cluster" [with CLI Access]
     - Then create role in K8s with A RoleName
     - Attach the Role to the user with RoleBinding object.
