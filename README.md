@@ -1,6 +1,6 @@
 # K8s-Roles
 
-RBAC - Role Based Access Control
+RBAC - Role Based Access Control    -   This comes under K8s Adminstration
 
 - Using this we provide the required access to the users or groups (group of users)
 
@@ -9,4 +9,4 @@ RBAC - Role Based Access Control
     - this can be performed on the resources we have in k8s
     - which are pod, deployment, statefulset, services, secrets and configmaps etc
 
-- 
+-
