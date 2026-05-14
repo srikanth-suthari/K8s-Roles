@@ -17,6 +17,9 @@
     - ClusterRole - Cluster Level
     - ClusterRoleBinding -
 
+* Role - A Role is a collection of permissions that allow users to perform specific actions (verbs, such as “get”, “create”, “and “delete”) on a defined set of Kubernetes resource types (such as Pods, Deployments, and Namespaces).
+
+
 - We give role permissions to users or groups based on their "Role"
     - Developer - CRUD Permissions
     - Admin - Read, Update and Delete permissions
