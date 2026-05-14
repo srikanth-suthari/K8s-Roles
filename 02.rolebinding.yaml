@@ -5,7 +5,7 @@ metadata:
   namespace: roboshop         # Namespace from the role created
 subjects:
 - kind: User                  # kind of user like normal user or group (group of users)
-  name: srikanth              # the user who needs the access to the namespace
+  name: sridhar               # the user who needs the access to the namespace
   apiGroup: rbac.authorization.k8s.io     # name of the apigroup
 roleRef:
   kind: Role                  # Referencing the role
