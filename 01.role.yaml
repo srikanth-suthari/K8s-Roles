@@ -1,7 +1,7 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
-  namespace: roboshop     # The Namespace to be accessed
+  namespace: roboshop     # The Namespace to be accessed or can be accessed.
   name: pod-manager       # Name of the role and it is accessed somewhere, where it is required
 rules:    # set of rules
 - apiGroups: [""]         # it means v1, apps/v1 also other like storage classes etc
