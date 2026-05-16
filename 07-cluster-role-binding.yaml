@@ -5,7 +5,7 @@ metadata:
   name: roboshop-dev
 subjects:
 - kind: User
-  name: sridhar # Name is case sensitive
+  name: srikanth # Name is case sensitive
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: ClusterRole
