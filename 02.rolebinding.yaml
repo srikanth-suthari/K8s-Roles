@@ -9,5 +9,5 @@ subjects:
   apiGroup: rbac.authorization.k8s.io     # name of the apigroup
 roleRef:
   kind: Role                  # Referencing the role
-  name: pod-manager           # Name of the role to be used for binding
+  name: roboshop-dev          # Name of the role to be used for binding
   apiGroup: rbac.authorization.k8s.io     # name of the apigroup
