@@ -1,0 +1,9 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: roboshop     # The Namespace to be accessed, the namespace should exist in the cluster
+  name: admin             # Name of the role and it is accessed somewhere, where it is required
+rules:                    # set of rules
+- apiGroups: [""]         # it means v1, apps/v1 also other like storage classes etc
+  resources: ["pods"]     # Only on the resource "pods" is accessible
+  verbs: ["get", "list", "create", "delete"]    # The operations that can be performed on the pods
