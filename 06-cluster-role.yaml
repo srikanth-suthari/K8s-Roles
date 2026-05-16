@@ -4,6 +4,9 @@ metadata:
   # "namespace" omitted since ClusterRoles are not namespaced
   name: roboshop-dev
 rules:
-- apiGroups: [""]
-  resources: ["nodes"]
+- apiGroups: ["storage.k8s.io"]
+  resources: ["storageclasses"]
+  verbs: ["get", "watch", "list"]
+- apiGroups: ["storage.k8s.io"]
+  resources: ["persistentvolumes"]
   verbs: ["get", "watch", "list"]
