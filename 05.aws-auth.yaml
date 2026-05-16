@@ -9,7 +9,7 @@ data:
   mapUsers: |
     - groups:
       - roboshop-dev
-      userarn: arn:aws:iam::111122223333:user/sridhar
+      userarn: arn:aws:iam::772706200515:user/sridhar
       username: sridhar
 kind: ConfigMap
 metadata:
