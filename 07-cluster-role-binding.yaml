@@ -9,5 +9,5 @@ subjects:
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: ClusterRole
-  name: nodes-reader
+  name: roboshop-dev
   apiGroup: rbac.authorization.k8s.io
