@@ -2,7 +2,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 # This cluster role binding allows anyone in the "manager" group to read secrets in any namespace.
 kind: ClusterRoleBinding
 metadata:
-  name: nodes-reader
+  name: roboshop-dev
 subjects:
 - kind: User
   name: sridhar # Name is case sensitive
