@@ -11,6 +11,10 @@ data:
       - roboshop-dev
       userarn: arn:aws:iam::772706200515:user/sridhar
       username: sridhar
+    - groups:
+      - admin
+      userarn: arn:aws:iam::772706200515:user/srividya
+      username: srividya
 kind: ConfigMap
 metadata:
   creationTimestamp: "2026-05-16T05:27:16Z"
