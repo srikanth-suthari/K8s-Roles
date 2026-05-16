@@ -4,7 +4,7 @@ metadata:
   namespace: roboshop     # The Namespace to be accessed, the namespace should exist in the cluster
   name: admin             # Name of the role and it is accessed somewhere, where it is required
 rules:                    # set of rules
-- apiGroups: [""]         # it means empty for core objects like pod,service, configmap and namespaces etc
+- apiGroups: ["*"]         # it means empty for core objects like pod,service, configmap and namespaces etc
                           # for deployments "apps" with out its version
   resources: ["*"]        # on every core resource like namespace, service, configmap etc
   verbs: ["*"]            # all the operations that can be performed on all the resources
