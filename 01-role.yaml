@@ -3,8 +3,7 @@ kind: Role
 metadata:
   namespace: roboshop     # The Namespace to be accessed, the namespace should exist in the cluster
   name: roboshop-dev      # Name of the role and it is accessed somewhere, where it is required
-rules:                    # set of rules
-- apiGroups: [""]         # it means empty for core objects like pod,service, configmap and namespaces etc
-                          # for deployments "apps" with out its version
-  resources: ["*"]        # on every core resource like namespace, service, configmap etc
-  verbs: ["*"]            # all the operations that can be performed on all the resources
+rules:                 # set of rules
+- apiGroups: [""]         # it means v1, apps/v1 also other like storage classes etc
+  resources: ["pods"]     # Only on the resource "pods" is accessible
+  verbs: ["get", "list", "create", "delete"]    # The operations that can be performed on the pods
