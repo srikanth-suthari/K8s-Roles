@@ -1,0 +1,17 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding             # Object type
+metadata:
+  name: admin                 # Name of the rolebinding
+  namespace: roboshop         # Namespace from the role whcih is created
+subjects:
+- kind: User                  # kind of user like normal user or group (group of users)
+  name: sridhar               # the user who needs the access to the namespace
+  apiGroup: rbac.authorization.k8s.io     # name of the apigroup
+  # Another user
+- kind: User
+  name: srividya
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role                  # Referencing the role
+  name: admin                 # Name of the role to be used for binding
+  apiGroup: rbac.authorization.k8s.io     # name of the apigroup
