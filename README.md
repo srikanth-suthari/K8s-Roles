@@ -39,3 +39,16 @@
 * Here we use aws-auth configmap for authentication between AWS IAM and AWS EKS (This is the main step)
 
     - Update the config file in EKS cluster which is - ".kube/config"
+
+### Process for RBAC - Cluster Level
+
+- User --> ClusterRole --> ClusterRoleBinding
+
+    - Here we are making use of AWS IAM for authentication and authorisation as user management
+    - Create a user in AWS IAM and give him the required access like "Describing the EKS Cluster" [with CLI Access]
+    - Then create role in K8s with A "ClusterRoleName" using ClusterRole object like resources SC, PV, PVC etc.
+    - Attach the Role to the user with "ClusterRoleBinding" object.
+
+* Here we use aws-auth configmap for authentication between AWS IAM and AWS EKS (This is the main step)
+
+    - Update the config file in EKS cluster which is - ".kube/config"
