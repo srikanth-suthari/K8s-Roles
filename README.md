@@ -13,9 +13,9 @@
 
 - In K8s we have 4 types of objects in RBAC, they are
     - Role - namdspace level
-    - RoleBinding -
+    - RoleBinding - To attach the role and user or group
     - ClusterRole - Cluster Level or Non Namespaced
-    - ClusterRoleBinding -
+    - ClusterRoleBinding - To attach the clusterrole and user or gruoup
 
 - Roles: Define a set of permissions within a namespace.
 - RoleBindings: Associate roles with users, groups, or service accounts within a namespace.
