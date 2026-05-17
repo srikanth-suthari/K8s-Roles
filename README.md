@@ -57,7 +57,11 @@
 
 - Service accounts in Kubernetes are meant to provide an identity for processes that run in a Pod.
 
+#### OIDC - OpenID Connect
 - This requires an authentication system like OIDC (OpenID Connect) to connect the K8s cluster with AWS IAM.
 - OpenID Connect (OIDC): This is the modern, widely adopted version (based on OAuth 2.0) that standardizes how identity is verified across web, mobile, and APIs.
+
 - Identity Provider (IdP): Companies like Google, Microsoft, or Apple act as IdPs, confirming to a website that you are who you claim to be.
 - How it works: You click "Sign in with..." on a site, authenticate with your provider, and they share an encrypted token with the site to log you in.
+- Single Sign-On (SSO): Log into multiple sites with one account.
+- Improved Security: No need for websites to store passwords, reducing the impact of data breaches.
