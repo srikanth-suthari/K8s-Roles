@@ -52,3 +52,12 @@
 * Here we use aws-auth configmap for authentication between AWS IAM and AWS EKS (This is the main step)
 
     - Update the config file in EKS cluster which is - ".kube/config"
+
+### Service Accounts
+
+- Service accounts in Kubernetes are meant to provide an identity for processes that run in a Pod.
+
+- This requires an authentication system like OIDC (OpenID Connect) to connect the K8s cluster with AWS IAM.
+- OpenID Connect (OIDC): This is the modern, widely adopted version (based on OAuth 2.0) that standardizes how identity is verified across web, mobile, and APIs.
+- Identity Provider (IdP): Companies like Google, Microsoft, or Apple act as IdPs, confirming to a website that you are who you claim to be.
+- How it works: You click "Sign in with..." on a site, authenticate with your provider, and they share an encrypted token with the site to log you in.
