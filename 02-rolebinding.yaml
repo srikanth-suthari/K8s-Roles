@@ -8,7 +8,7 @@ subjects:
   name: sridhar               # the user who needs the access to the namespace
   apiGroup: rbac.authorization.k8s.io     # name of the apigroup
 - kind: User
-  naem: srividya
+  name: srividya
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: Role                  # Referencing the role
