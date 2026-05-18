@@ -7,6 +7,9 @@ subjects:
 - kind: User                  # kind of user like normal user or group (group of users)
   name: sridhar               # the user who needs the access to the namespace
   apiGroup: rbac.authorization.k8s.io     # name of the apigroup
+- kind: User
+  naem: srividya
+  apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: Role                  # Referencing the role
   name: roboshop-dev          # Name of the role to be used for binding
