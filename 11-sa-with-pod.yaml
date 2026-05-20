@@ -4,6 +4,7 @@ metadata:
   name: rbac-test
   namespace: roboshop
 spec:
+  serviceAccount: roboshop-sa
   containers:
     - name: nginx
       image: nginx
