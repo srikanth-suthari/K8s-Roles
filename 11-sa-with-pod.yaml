@@ -6,5 +6,5 @@ metadata:
 spec:
   serviceAccount: roboshop-sa
   containers:
-    - name: nginx
-      image: nginx
+    - name: kubectl-cli
+      image: bitnami/kubectl:latest
