@@ -71,4 +71,4 @@
 - pod -> service account -> roles -> IAM policies -> the end resource like Secrets Manager in AWS
 - here we are creating the service account with command and attaching the roles to it with commands only.
 - to create service account using command is:
-    * kubectl create sa <service accoutn name>
+    * kubectl create sa <service accoutn name> -n <namespace>
