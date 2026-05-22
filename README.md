@@ -65,3 +65,7 @@
 - How it works: You click "Sign in with..." on a site, authenticate with your provider, and they share an encrypted token with the site to log you in.
 - Single Sign-On (SSO): Log into multiple sites with one account.
 - Improved Security: No need for websites to store passwords, reducing the impact of data breaches.
+
+- process behind attaching a policy and roles to the service account and a pod
+
+- pod -> service account -> roles -> IAM policies -> the end resource like Secrets Manager in AWS
