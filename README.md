@@ -69,3 +69,4 @@
 - process behind attaching a policy and roles to the service account and a pod
 
 - pod -> service account -> roles -> IAM policies -> the end resource like Secrets Manager in AWS
+- here we are creating the service account with command and attaching the roles to it with commands only.
