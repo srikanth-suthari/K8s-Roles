@@ -72,3 +72,5 @@
 - here we are creating the service account with command and attaching the roles to it with commands only.
 - to create service account using command is:
     * kubectl create sa <service accoutn name> -n <namespace>
+
+- we can create a service account within k8s and attach it with a role and bind the service to a pod for accessing.
