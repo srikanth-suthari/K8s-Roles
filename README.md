@@ -74,3 +74,4 @@
     * kubectl create sa <service accoutn name> -n <namespace>
 
 - we can create a service account within k8s and attach it with a role and bind the service to a pod for accessing.
+- but, if we use the AWS IAM for authentication we need to create a role in aws roles and attach permissions to it
