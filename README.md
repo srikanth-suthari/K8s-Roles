@@ -79,3 +79,4 @@
 - for this external communication or authentication and authorization with aws from k8s cluster, The OIDC plugin is mandatory for the communication
 
 - * we can do this process with CLI commands and also with K8s yaml manifests
+- while using AWS IAM for authentication in service accounts we need to map the resources with "annotations" for external resource selection or accessibility
