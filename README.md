@@ -77,4 +77,5 @@
 - but, if we use the AWS IAM for authentication we need to create a role in aws roles and attach with appropriate policies and  permissions to it
 - then we need to attach the role to a service account which is there in our k8s cluster and finally attach the service account to a pod for accessibility
 - for this external communication or authentication and authorization with aws from k8s cluster, The OIDC plugin is mandatory for the communication
--
+
+- * we can do this process with CLI commands and also with K8s yaml manifests
