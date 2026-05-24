@@ -80,3 +80,5 @@
 
 - * we can do this process with CLI commands and also with K8s yaml manifests
 - while using AWS IAM for authentication in service accounts we need to map the resources with "annotations" for external resource selection or accessibility
+
+- the service accounts also come under rbac in k8s
