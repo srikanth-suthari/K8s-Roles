@@ -5,7 +5,7 @@ metadata:
   annotations:
     eks.amazonaws.com/role-arn: arn:aws:iam::772706200515:role/eksctl-roboshop-dev-addon-iamserviceaccount-r-Role1-1K7JHg5MnWnN
   creationTimestamp: "2026-05-25T17:05:50Z"
-  
+  # Labels in k8s are used for selecting internal resources
   labels:
     app.kubernetes.io/managed-by: eksctl
   name: db-secrets
