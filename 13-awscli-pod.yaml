@@ -4,7 +4,7 @@ metadata:
   name: aws-cli
   namespace: roboshop
 spec:
-  serviceAccount: db-secrets
+  # serviceAccount: db-secrets
   containers:
     - name: aws-cli
       image: amazon/aws-cli
