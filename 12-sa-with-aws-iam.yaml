@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::772706200515:role/eksctl-roboshop-dev-cluster-ServiceRole-l2MMU1T5foR6
+  creationTimestamp: "2026-05-26T09:40:03Z"
+  labels:
+    app.kubernetes.io/managed-by: eksctl
+  name: db-secrets
+  namespace: roboshop
+  resourceVersion: "38946"
+  uid: dd1cc78c-98c2-4f3e-800b-fb66c13c96c7
