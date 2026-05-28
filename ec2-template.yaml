@@ -1,0 +1,40 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'AWS EC2 Instance creation with custom username and password via UserData'
+
+Parameters:
+  LatestAmiId:
+    Type: 'AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>'
+    Default: '/aws/service/ami-amazon-linux-latest/al2023-ami-kernel-default-x86_64'
+
+Resources:
+  MyEC2Instance:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: 't3.micro'
+      ImageId: !Ref LatestAmiId
+      SecurityGroupIds:
+        - !Ref InstanceSecurityGroup
+      # UserData runs a bash script on the first boot to set up the user
+      UserData:
+        Fn::Base64: !Sub |
+          #!/bin/bash
+          # Create a new user
+          useradd srikanth
+          # Set the password (change 'MySecurePassword123!' to your desired password)
+          echo "srikanth@123" | chpasswd
+          # Give the user sudo privileges (optional)
+          usermod -aG wheel srikanth
+          # Enable password authentication in SSH configuration
+          sed -i 's/^PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
+          # Restart SSH service to apply changes
+          systemctl restart sshd
+
+  InstanceSecurityGroup:
+    Type: 'AWS::EC2::SecurityGroup'
+    Properties:
+      GroupDescription: 'Enable SSH access via port 22'
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0 # Warning: Open to the world. Change to your IP for security.
