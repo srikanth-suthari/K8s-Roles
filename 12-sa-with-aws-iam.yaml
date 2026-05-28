@@ -2,12 +2,11 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   annotations:
-    # create a role in aws and paste the arn of the role here
-    eks.amazonaws.com/role-arn: arn:aws:iam::772706200515:role/eksctl-roboshop-dev-addon-iamserviceaccount-r-Role1-lHgCZFzO2YBz
-  creationTimestamp: "2026-05-26T12:57:32Z"
+    eks.amazonaws.com/role-arn: arn:aws:iam::772706200515:role/eksctl-roboshop-dev-addon-iamserviceaccount-r-Role1-0eE3YpQuhR1L
+  creationTimestamp: "2026-05-28T06:02:39Z"
   labels:
     app.kubernetes.io/managed-by: eksctl
-  name: secrets-reader
+  name: mongo-secret-reader
   namespace: roboshop
-  resourceVersion: "71553"
-  uid: 448e37a6-b4d2-448b-a00d-69dc5ff7d44f
+  resourceVersion: "10229"
+  uid: 15eb3156-46b5-4ee2-8218-c9e861096442
