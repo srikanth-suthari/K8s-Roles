@@ -11,6 +11,6 @@ export AWS_DEFAULT_REGION=us-east-1
 
 
 aws eks update-nodegroup-config \
-  --cluster-name <your-cluster-name> \
-  --nodegroup-name <existing-node-group-name> \
-  --scaling-config minSize=<min>,maxSize=<max>,desiredSize=<desired>
+  --cluster-name dev-cluster \
+  --nodegroup-name dev-cluster \
+  --scaling-config minSize=1,maxSize=5,desiredSize=2
